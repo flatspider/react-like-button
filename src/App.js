@@ -1,6 +1,21 @@
 import logo from "./logo.svg";
 import "./App.css";
 
+import { useState } from "react";
+
+export default function Counter() {
+  const [count, setCount] = useState(0);
+
+  function handleClick() {
+    setCount(count + 1);
+  }
+
+  return <button onClick={handleClick}> {count} likes </button>;
+}
+
+{
+  /*
+
 function App() {
   return (
     <div className="App">
@@ -23,3 +38,5 @@ function App() {
 }
 
 export default App;
+*/
+}
