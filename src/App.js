@@ -11,7 +11,6 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        Test World!
         <button onClick={handleClick}> {count} likes </button>
       </header>
     </div>
