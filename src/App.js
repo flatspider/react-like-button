@@ -4,17 +4,17 @@ import { useState } from "react";
 function App() {
   const [count, setCount] = useState(0);
 
-  function handleClick() {
+  const handleClick = () => {
     setCount(count + 1);
-  }
+  };
 
-  function checkCount() {
+  const checkCount = () => {
     if (count == 1) {
       return "like";
     } else {
       return "likes";
     }
-  }
+  };
 
   return (
     <div className="App">
